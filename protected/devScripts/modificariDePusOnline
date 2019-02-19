@@ -1,0 +1,12 @@
+---------pentru afisare cele mai recente 25 de seo keywords oriunde pe site
+upload la extensions/yiiext
+si sters pluginurirle de smarty din vendors/Smarty/plugins
+e un plugin de smarty getLastSeoKeywords, are ca parametru limit, si un partial in themes/Andra Blue/views/site/seoKeywordsCloud.tpl
+in el e folosit pluginul de smarty, partialul e folosit in themes/Andra blue/views/video/default/browse.tpl
+Afisarea cuvintelor cheie in functie de dimensiune nu e real, foloseste id-ul din tabel al cuvantului cheie pentru a folosi unul
+din cele 3 clase css (tag1, tag2,tag3). Pe site-uri probabil numarul de cautari ar 1 pentru majoritatea cuvintelor
+--------pentru pagina suggest/keywords
+protected/modules/video/controllers/SuggestController.php
+si trebuie facut fisierul themes/theme_name/views/video/suggest/keywords.tpl, acum e facut doar pentru tema Andra Blue
+--------pentru tema cu categoriile pe prima pagina
+tema e copiata dupa Aurora Blue, trebuie uploadata, trebuie uploadat si protected/modules/video/controllers/DefaultController.php, am scos o interogare de acolo
